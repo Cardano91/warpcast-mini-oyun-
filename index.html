@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://example.com/frame-gorsel.png" />
+  <meta property="fc:frame:button:1" content="Zarı At" />
+  <meta property="fc:frame:post_url" content="https://your-backend-url.com/api/roll" />
+  <title>Zar Oyunu</title>
+</head>
+<body>
+  <h1>Zar At!</h1>
+  <button onclick="rollDice()">Zarı At</button>
+  <p id="sonuc"></p>
+
+  <script>
+    function rollDice() {
+      const sayi = Math.floor(Math.random() * 6) + 1;
+      document.getElementById("sonuc").innerText = "Zar sonucu: " + sayi;
+    }
+  </script>
+</body>
+</html>
